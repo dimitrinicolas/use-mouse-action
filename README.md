@@ -2,7 +2,7 @@
 
 React Hooks to listen to both mouse down or up and click events with a once called function.
 
-## [Example](http://dimitrinicolas.github.io/use-mouse-action/)
+## [Example](http://dimitrinicolas.github.io/use-mouse-action/example/)
 
 This hook can be used to create fast usable drop-down buttons.
 

@@ -25,9 +25,9 @@
     "cypress-run": "cypress run",
     "cypress": "npm run build-test && run-p --race ci-server cypress-open",
     "test": "npm run build-test && run-p --race ci-server cypress-run",
-    "build-docs": "webpack --config webpack.docs.config.js --mode production",
-    "build": "npm-run-all -s build-lib build-test build-docs",
-    "prepublish": "npm run build",
+    "build-example": "webpack --config webpack.example.config.js --mode production",
+    "build": "npm-run-all -s build-lib build-test build-example",
+    "prepare": "npm run build",
     "publish": "clean-publish --files .nyc_output coverage"
   },
   "devDependencies": {
