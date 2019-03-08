@@ -1,4 +1,4 @@
-# use-mouse-action
+# use-mouse-action [![Build Status][travis badge]][travis link]
 
 React Hooks to listen to both mouse down or up and click events with a once called function.
 
@@ -97,3 +97,6 @@ npm test
 ## License
 
 This project is licensed under the [MIT license](LICENSE).
+
+[travis badge]: https://travis-ci.org/dimitrinicolas/use-mouse-action.svg?branch=master
+[travis link]: https://travis-ci.org/dimitrinicolas/use-mouse-action
