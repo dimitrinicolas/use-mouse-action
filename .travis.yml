@@ -1,0 +1,18 @@
+language: node_js
+
+node_js:
+  - stable
+  - '8'
+
+install:
+  - npm install
+
+before_script:
+  - npm run build
+
+script:
+  - npm test
+
+# Telegram bot
+notifications:
+  webhooks: https://fathomless-fjord-24024.herokuapp.com/notify
