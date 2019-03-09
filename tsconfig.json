@@ -4,7 +4,12 @@
     "module": "commonjs",
     "declaration": true,
     "noImplicitAny": true,
-    "outDir": "dist"
+    "outDir": "./dist",
+    "noLib": false,
+    "sourceMap": true,
+    "lib": ["es2018", "dom"],
+    "esModuleInterop": true
   },
-  "file": ["src/index.ts"]
+  "include": ["./src/index.ts"],
+  "exclude": ["node_modules"]
 }
