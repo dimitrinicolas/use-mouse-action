@@ -1,6 +1,6 @@
 {
   "name": "use-mouse-action",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "React Hooks to listen to both mouse down or up and click events with a once called function.",
   "author": "Dimitri NICOLAS <dimitri@ooeo.fr>",
   "license": "MIT",

@@ -29,16 +29,18 @@ const DropDown = () => {
   const props = useMouseDown(() => setOpen(state => !state));
 
   return (
-    <div className="dropdown">
-      <button type="button" {...props}>
-        Open drop-down
-      </button>
-      <ul style={{ display: open ? 'block' : 'none' }}>
-        <DropDownItem handleClick={() => setOpen(false)}>Action #1</DropDownItem>
-        <DropDownItem handleClick={() => setOpen(false)}>Action #2</DropDownItem>
-        <DropDownItem handleClick={() => setOpen(false)}>Action #3</DropDownItem>
-      </ul>
-    </div>
+    <>
+      <div className="dropdown">
+        <button type="button" {...props}>
+          Open drop-down
+        </button>
+        <ul style={{ display: open ? 'block' : 'none' }}>
+          <DropDownItem handleClick={() => setOpen(false)}>Action #1</DropDownItem>
+          <DropDownItem handleClick={() => setOpen(false)}>Action #2</DropDownItem>
+          <DropDownItem handleClick={() => setOpen(false)}>Action #3</DropDownItem>
+        </ul>
+      </div>
+    </>
   );
 };
 

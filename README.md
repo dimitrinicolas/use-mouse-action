@@ -60,6 +60,8 @@ The `useMouseDown` and `useMouseUp` are both a shortcut to respectively set the 
 - `up` (default: `false`): If the element should listen to mouseup event.
 - `touch` (default: `true`): If the element should listen to touch equivalent
 events.
+- `timeout` (default: `10`): Short timeout in milliseconds to prevents multiple
+events.
 
 You can provide functions that should listen to each event with theses options:
 

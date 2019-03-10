@@ -90,6 +90,7 @@ pre {
   text-align: left;
   border: none;
   cursor: pointer;
+  background-color: white;
   transition: 0.12s;
 }
 .dropdown ul li button:hover {

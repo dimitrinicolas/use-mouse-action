@@ -3,7 +3,7 @@ import { useCallback, useEffect, useState } from 'react';
 import { HooksInput } from './types/options';
 import { IProps } from './types/props';
 
-const DEFAULT_OPTIONS = { down: false, up: false, touch: true };
+const DEFAULT_OPTIONS = { down: false, up: false, touch: true, timeout: 10 };
 
 /**
  * Test if a mouse event can trigger a click.
@@ -26,6 +26,7 @@ export const useMouseAction = (options: HooksInput): IProps => {
     down,
     up,
     touch,
+    timeout,
     onClick,
     onMouseDown,
     onMouseUp,
@@ -52,7 +53,7 @@ export const useMouseAction = (options: HooksInput): IProps => {
    *
    */
   const onMouseDownEnd = () => {
-    setTimeout(() => setMouseDown(false), 10);
+    setTimeout(() => setMouseDown(false), timeout);
   };
 
   /**
@@ -71,7 +72,7 @@ export const useMouseAction = (options: HooksInput): IProps => {
    */
   const onMouseUpTriggered = () => {
     setMouseUpTriggered(true);
-    setTimeout(() => setMouseUpTriggered(false), 10);
+    setTimeout(() => setMouseUpTriggered(false), timeout);
   };
 
   /**
@@ -199,7 +200,7 @@ export const useMouseAction = (options: HooksInput): IProps => {
        * prevent next coming click event to be catched
        * by a newly rendered element above the button.
        */
-      setTimeout(() => onAction(event), 10);
+      setTimeout(() => onAction(event), timeout);
     }
   };
 
@@ -220,7 +221,7 @@ export const useMouseAction = (options: HooksInput): IProps => {
        * to be catched by a newly rendered element
        * above the button.
        */
-      setTimeout(() => onAction(event), 10);
+      setTimeout(() => onAction(event), timeout);
     }
   };
 

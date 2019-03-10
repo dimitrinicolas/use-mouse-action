@@ -33,6 +33,12 @@ interface IOptions {
   touch?: boolean;
 
   /**
+   * Short time to prevent multiple events.
+   * @default 10
+   */
+  timeout?: number;
+
+  /**
    * Native click event handler passed into returned props.
    */
   onClick?: PublicEventLister<MouseEvent>;
