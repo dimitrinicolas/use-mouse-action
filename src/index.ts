@@ -3,7 +3,7 @@ import { useCallback, useEffect, useState } from 'react';
 import { HooksInput } from './types/options';
 import { IProps } from './types/props';
 
-const DEFAULT_OPTIONS = { down: false, up: false, touch: true, timeout: 10 };
+const DEFAULT_OPTIONS = { down: false, up: false, touch: false, timeout: 10 };
 
 /**
  * Test if a mouse event can trigger a click.

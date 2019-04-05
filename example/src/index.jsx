@@ -74,17 +74,24 @@ ReactDOM.render(
     <main>
       <section>
         <h1>Classic drop-down</h1>
+
         <ClassicDropDown />
+
         <h2>Source Code</h2>
+
         <SyntaxHighlighter language="jsx" style={prism}>
           {classicCode}
         </SyntaxHighlighter>
       </section>
       <section>
         <h1>Faster usable drop-down</h1>
+
         <p>On desktop, you can simply keep mouse button down, drag down and release the button on the wanted item.</p>
+
         <DropDown />
+
         <h2>Source Code</h2>
+
         <SyntaxHighlighter language="jsx" style={prism}>
           {libCode}
         </SyntaxHighlighter>

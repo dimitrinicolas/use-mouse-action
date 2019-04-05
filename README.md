@@ -46,7 +46,9 @@ They all return an object of event listeners to add on the element.
 
 ```jsx
 import { useMouseDown } from 'use-mouse-action';
+
 /** ... */
+
 const props = useMouseDown(() => toggle);
 return (<button type="button" {...props}>Click me</button>);
 ```
@@ -58,7 +60,7 @@ The `useMouseDown` and `useMouseUp` are both a shortcut to respectively set the 
 - `onAction` (required): The function called on custom click triggered.
 - `down` (default: `false`): If the element should listen to mousedown event.
 - `up` (default: `false`): If the element should listen to mouseup event.
-- `touch` (default: `true`): If the element should listen to touch equivalent
+- `touch` (default: `false`): If the element should listen to touch equivalent
 events.
 - `timeout` (default: `10`): Short timeout in milliseconds to prevents multiple
 events.

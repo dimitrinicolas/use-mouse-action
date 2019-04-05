@@ -24,7 +24,7 @@ context('useMouseDown', () => {
   it('touchstart', () => {
     cy.get(id)
       .trigger('touchstart', { button: 0 })
-      .contains('1');
+      .contains('0');
   });
 
   it('mousedown wrong button', () => {
@@ -77,7 +77,7 @@ context('useMouseUp', () => {
   it('touchend', () => {
     cy.get(id)
       .trigger('touchend')
-      .contains('1');
+      .contains('0');
   });
 
   it('mouseup wrong button', () => {
@@ -139,7 +139,7 @@ context('useMouseAction empty', () => {
   });
 });
 
-context('useMouseDown and touch disabled', () => {
+context('useMouseDown and touch enabled', () => {
   const id = '#4';
 
   it('mousedown', () => {
@@ -151,7 +151,7 @@ context('useMouseDown and touch disabled', () => {
   it('touchstart', () => {
     cy.get(id)
       .trigger('touchstart', { button: 0 })
-      .contains('0');
+      .contains('1');
   });
 
   it('mousedown wrong button', () => {
@@ -180,8 +180,8 @@ context('useMouseDown and touch disabled', () => {
   });
 });
 
-context('useMouseUp and touch disabled', () => {
-  const id = '#2';
+context('useMouseUp and touch enabled', () => {
+  const id = '#5';
 
   it('mousedown', () => {
     cy.get(id)

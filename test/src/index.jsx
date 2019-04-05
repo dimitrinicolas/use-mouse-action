@@ -14,10 +14,10 @@ const Test = () => {
   const props3 = useMouseAction(() => setText3(c => c + 1));
 
   const [text4, setText4] = useState(0);
-  const props4 = useMouseDown({ onAction: () => setText4(c => c + 1), touch: false });
+  const props4 = useMouseDown({ onAction: () => setText4(c => c + 1), touch: true });
 
   const [text5, setText5] = useState(0);
-  const props5 = useMouseUp({ onAction: () => setText5(c => c + 1), touch: false });
+  const props5 = useMouseUp({ onAction: () => setText5(c => c + 1), touch: true });
 
   return (
     <>

@@ -28,7 +28,7 @@ interface IOptions {
 
   /**
    * Handle touch event equivalent to mousedown and mouseup.
-   * @default true
+   * @default false
    */
   touch?: boolean;
 
